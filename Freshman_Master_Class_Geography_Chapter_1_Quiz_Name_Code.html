@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Freshman Master Class | Geography Chapter 1 Exam</title>
+<style>
+:root{--bg:#f4f6fa;--card:#fff;--ink:#172033;--muted:#667085;--line:#e4e8f0;--brand:#f2c500;--brandInk:#171717;--good:#16834a;--bad:#c43232;--soft:#f8f9fc}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans Ethiopic","Abyssinica SIL",Arial,sans-serif}
+button{font:inherit;cursor:pointer;border:0;border-radius:12px;padding:12px 18px;font-weight:700}button:focus-visible{outline:3px solid #6b8afd;outline-offset:2px}
+.primary{background:var(--brand);color:var(--brandInk)}.secondary{background:#eef1f6;color:#202a3b}.danger{background:#b42318;color:#fff}.muted{color:var(--muted)}.hide{display:none!important}
+header{background:#111827;color:white;padding:17px 22px;border-bottom:4px solid var(--brand)}.head{max-width:1120px;margin:auto;display:flex;align-items:center;gap:14px}.logo{width:43px;height:43px;background:var(--brand);color:#111;border-radius:12px;display:grid;place-items:center;font-weight:900;font-size:19px}.brand{font-weight:850;letter-spacing:.2px}.subbrand{color:#cbd5e1;font-size:13px}
+main{max-width:1120px;margin:32px auto;padding:0 18px 42px}.panel{background:var(--card);border:1px solid var(--line);border-radius:20px;box-shadow:0 10px 30px #1720330b}
+.start{max-width:760px;margin:40px auto;padding:clamp(24px,5vw,48px)}.eyebrow{font-size:12px;font-weight:850;letter-spacing:1.5px;text-transform:uppercase;color:#725d00}.start h1{font-size:clamp(27px,4vw,42px);line-height:1.12;margin:12px 0}.start p{color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0}.stat{background:var(--soft);border:1px solid var(--line);padding:16px;border-radius:14px}.stat strong{display:block;font-size:23px}.stat span{font-size:13px;color:var(--muted)}.notice{padding:14px 16px;border-radius:12px;background:#fff8d8;border:1px solid #f3e39b;color:#514300;font-size:14px;margin:20px 0}
+.exam-layout{display:grid;grid-template-columns:minmax(0,1fr) 265px;gap:20px;align-items:start}.question-panel{padding:clamp(20px,3vw,32px)}.side{padding:20px;position:sticky;top:16px}.exam-top{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:22px}.pill{font-size:12px;font-weight:800;padding:7px 10px;border-radius:99px;background:#fff3b3;color:#4d4000}.timer{font-variant-numeric:tabular-nums;font-size:20px;font-weight:900;background:#111827;color:white;padding:9px 13px;border-radius:12px}.timer.warn{background:#b42318}.progress{height:7px;background:#edf0f5;border-radius:99px;overflow:hidden;margin-bottom:26px}.progress>div{height:100%;background:var(--brand);width:0;transition:width .2s}
+.qnumber{color:var(--muted);font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.8px}.question{font-size:clamp(19px,2.2vw,24px);line-height:1.38;font-weight:780;margin:10px 0 24px}.options{display:grid;gap:12px}.option{display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;background:white;border:1.5px solid var(--line);padding:15px;border-radius:14px;color:var(--ink);font-weight:500;line-height:1.45}.option .letter{flex:0 0 30px;width:30px;height:30px;display:grid;place-items:center;background:#f0f2f6;border-radius:9px;font-weight:850}.option.selected{border-color:#b59a00;background:#fffbea;box-shadow:0 0 0 2px #f2c50020}.option.selected .letter{background:var(--brand);color:#111}.option:disabled{cursor:default}.navrow{display:flex;justify-content:space-between;gap:10px;margin-top:28px;padding-top:20px;border-top:1px solid var(--line)}.navgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:16px 0 20px}.qdot{padding:9px 0;border:1px solid var(--line);background:#fff;border-radius:9px;font-size:13px}.qdot.current{border:2px solid #9b8200;background:#fff8ce}.qdot.answered{background:#e6f6ec;border-color:#9ed5b4}.legend{font-size:12px;color:var(--muted);display:grid;gap:7px}.legend span:before{content:"";display:inline-block;width:9px;height:9px;border-radius:3px;background:#e6f6ec;border:1px solid #9ed5b4;margin-right:7px}.legend span:nth-child(2):before{background:#fff8ce;border-color:#9b8200}.side h3{margin:0 0 5px}.side .muted{font-size:13px}
+.results{padding:clamp(20px,4vw,40px)}.scorebox{display:flex;align-items:center;gap:22px;flex-wrap:wrap;padding:22px;background:#111827;color:white;border-radius:18px;margin:22px 0}.score{font-size:48px;line-height:1;font-weight:900;color:var(--brand)}.review{border:1px solid var(--line);border-radius:14px;margin-top:14px;overflow:hidden}.review summary{padding:16px;font-weight:800;cursor:pointer;background:#fafbfc}.reviewbody{padding:0 16px 18px}.answerline{margin:10px 0}.correct{color:var(--good);font-weight:800}.incorrect{color:var(--bad);font-weight:800}.result-option{padding:8px 10px;border-radius:8px;margin:6px 0;background:#f5f6f8}.result-option.is-correct{background:#e8f7ee;border:1px solid #b2e1c2}.result-option.is-picked-wrong{background:#fff0f0;border:1px solid #f0b4b4}
+#focusShield{position:fixed;inset:0;z-index:99;background:#111827f2;color:white;display:grid;place-items:center;text-align:center;padding:25px;backdrop-filter:blur(12px)}#focusShield .shieldbox{max-width:440px}.watermark{position:fixed;bottom:8px;right:12px;font-size:10px;color:#6b7280;opacity:.65;pointer-events:none;z-index:5}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:16px}
+@media(max-width:820px){.exam-layout{grid-template-columns:1fr}.side{position:static;order:-1}.navgrid{grid-template-columns:repeat(10,1fr)}.side .legend{display:flex;flex-wrap:wrap;gap:12px}.exam-top{align-items:flex-start}.timer{font-size:17px}.stats{gap:8px}.stat{padding:12px}.stat strong{font-size:20px}}
+@media(max-width:480px){main{margin:18px auto;padding:0 10px 28px}.navgrid{grid-template-columns:repeat(8,1fr)}.navrow button{padding:11px 13px}.head{padding:0}.stats{grid-template-columns:1fr 1fr}.stat:last-child{grid-column:span 2}}
+@media print{body{display:none!important}}
+.explain-english,.explain-amharic{padding:12px 14px;border-radius:10px;background:var(--panel-soft,rgba(128,128,128,.09));line-height:1.8}.explain-amharic{font-family:"Noto Sans Ethiopic","Abyssinica SIL",system-ui,sans-serif;unicode-bidi:plaintext;margin-top:10px}
+</style>
+</head>
+<body>
+<header><div class="head"><div class="logo">FM</div><div><div class="brand">FRESHMAN MASTER CLASS</div><div class="subbrand">Geography of Ethiopia and the Horn · Chapter One</div></div></div></header>
+<main>
+<section id="startScreen" class="panel start">
+  <div class="eyebrow">Chapter One Assessment</div>
+  <h1>Geography of Ethiopia and the Horn</h1>
+  <p>Test your understanding with 40 multiple-choice questions. Read each question carefully and choose the best answer.</p>
+  <div class="stats"><div class="stat"><strong>40</strong><span>Questions</span></div><div class="stat"><strong>40 min</strong><span>Time limit</span></div><div class="stat"><strong>40 pts</strong><span>Total marks</span></div></div>
+  <h3>Before you begin</h3>
+  <ul><li>Each question is worth 1 point.</li><li>You can move between questions and change your answers before submitting.</li><li>The exam submits automatically when the timer reaches zero.</li><li>After submission, review your score and explanations for missed questions.</li></ul>
+  <div class="student-fields" style="display:grid;gap:8px;margin:24px 0 18px">
+    <label for="studentName" style="font-weight:750">Student full name</label>
+    <input id="studentName" name="studentName" autocomplete="name" maxlength="120" required placeholder="Enter your full name" style="width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:12px;font:inherit;color:var(--ink);background:#fff">
+    <label for="accessCode" style="font-weight:750;margin-top:8px">Exam access code</label>
+    <input id="accessCode" name="accessCode" type="password" autocomplete="off" maxlength="80" required placeholder="Enter the code provided by your instructor" style="width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:12px;font:inherit;color:var(--ink);background:#fff">
+    <p id="entryError" class="muted" role="alert" style="margin:0;color:#b42318"></p>
+  </div>
+  <button class="primary" id="startBtn">Start Exam <span aria-hidden="true">→</span></button>
+</section>
+
+<section id="examScreen" class="hide">
+  <div class="exam-layout">
+    <section class="panel question-panel">
+      <div class="exam-top"><span class="pill">CHAPTER ONE · MCQ EXAM</span><div id="timer" class="timer">40:00</div></div>
+      <div class="progress"><div id="progressBar"></div></div>
+      <div id="qnumber" class="qnumber">Question 1 of 40</div>
+      <div id="questionText" class="question"></div>
+      <div id="options" class="options"></div>
+      <div class="navrow"><button id="prevBtn" class="secondary">← Previous</button><button id="nextBtn" class="primary">Next →</button></div>
+    </section>
+    <aside class="panel side">
+      <h3>Question Navigator</h3><div class="muted"><span id="answeredCount">0</span> of 40 answered</div>
+      <div id="navGrid" class="navgrid"></div>
+      <div class="legend"><span>Answered</span><span>Current question</span></div>
+      <hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
+      <button id="submitBtn" class="danger" style="width:100%">Submit Exam</button>
+      <p class="muted" style="margin-bottom:0">Check your answers before submitting.</p>
+    </aside>
+  </div>
+</section>
+
+<section id="resultScreen" class="panel results hide">
+  <div class="eyebrow">Exam completed</div><h1>Your Results</h1>
+  <p class="muted">Your attempt has been scored. Review the questions you missed and read the explanations.</p>
+  <div class="scorebox"><div class="score" id="scoreValue">0/40</div><div><div style="font-size:21px;font-weight:850" id="percentValue">0%</div><div style="color:#cbd5e1" id="resultSummary">Results summary</div></div></div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px"><button id="reviewWrongBtn" class="secondary">Review Incorrect Only</button><button id="reviewAllBtn" class="secondary">Review All Questions</button></div>
+  <div id="reviewList"></div>
+  <p style="margin-top:24px"><button id="backTopBtn" class="primary">Back to Results Top</button></p>
+</section>
+</main>
+<div id="focusShield" class="hide"><div class="shieldbox"><div style="font-size:42px">⚠</div><h2>Exam window lost focus</h2><p>Please return to the exam window. The exam is still in progress and the timer continues.</p><button id="returnBtn" class="primary">I’m back to the exam</button></div></div>
+<div class="watermark">FRESHMAN MASTER CLASS · CHAPTER ONE</div>
+<footer>Freshman Master Class · Geography of Ethiopia and the Horn</footer>
+<script>
+const QUESTIONS = [
+  {
+    "n": 1,
+    "stem": "A researcher is analyzing the global distribution of tropical rainforest climates, tracking precipitation patterns across continents without restricting the study to any single national boundary. Which methodological approach is being applied?",
+    "options": [
+      "Regional Geography",
+      "Topical (Systematic) Geography",
+      "Functional Node Analysis",
+      "Cartographic Surveying"
+    ],
+    "answer": 1,
+    "explanation": "Topical or systematic geography focuses on a particular category of physical or human phenomena distributed across the Earth (e.g., studying climate or vegetation worldwide independently).",
+    "amharic": "Topical (Systematic) Geography ማለት ከብዙ የምድር ክስተቶች መካከል አንዱን የተወሰነ ክስተት (ለምሳሌ፦ የአየር ንብረት) ብቻ ነጥሎ በምድር ዙሪያ ያለውን ስርጭት ማጥናት ነው።"
+  },
+  {
+    "n": 2,
+    "stem": "Why do geographers find it difficult to formulate a single, permanent definition of their discipline that remains static across all times and places?",
+    "options": [
+      "Because geographic features never change or evolve.",
+      "Because of the dynamic nature of the discipline, evolving scopes, and changing methods of study.",
+      "Because maps are restricted solely to political boundaries.",
+      "Because geography deals exclusively with ancient history."
+    ],
+    "answer": 1,
+    "explanation": "Geography lacks a single static definition because the discipline is highly dynamic, and its scope, methods, and spatial/temporal focus continuously evolve.",
+    "amharic": "ጂኦግራፊ ዘላቂ እና አንድ ወጥ የሆነ ትርጉም የሌለው ትምህርቱ የማያቆም ተለዋዋጭ ባህሪ (dynamic nature) ስላለው፣ የጥናት ወሰኑ (scope) እና ዘዴዎቹ በጊዜ ሂደት እየሰፉና እየተቀየሩ ስለሚሄዱ ነው።"
+  },
+  {
+    "n": 3,
+    "stem": "Which specific layer of the Earth serves as the primary scope of geography, representing the thin interface where the atmosphere, lithosphere, hydrosphere, and biosphere interact?",
+    "options": [
+      "The molten outer core and mantle",
+      "The surface of the Earth (the habitable zone)",
+      "The stratosphere and mesosphere layers",
+      "The deep ocean trenches exclusively"
+    ],
+    "answer": 1,
+    "explanation": "The scope of geography is centered on the Earth's surface—the thin habitable zone where lithosphere, atmosphere, hydrosphere, and biosphere interact to sustain life.",
+    "amharic": "የጂኦግራፊ ዋና የጥናት ወሰን የምድር ገጽ (Surface of the Earth) ሲሆን፣ እሱም አራቱ የምድር ክፍሎች (ከባቢ አየር፣ የድንጋይ ንጣፍ፣ የውሃ አካላት እና ህይወት ያላቸው አካላት) የሚገናኙበትና የሰው ልጅ መኖር የሚችልበት ጠባብ ቀጠና ነው።"
+  },
+  {
+    "n": 4,
+    "stem": "An interdisciplinary team is studying an East African highland region by examining how relief, climate, soils, natural vegetation, and human agricultural practices interact and influence one another within that specific territory. This approach is known as:",
+    "options": [
+      "Topical Geography",
+      "Regional Geography",
+      "Astronomical Positioning",
+      "Geodetic Surveying"
+    ],
+    "answer": 1,
+    "explanation": "Regional geography examines the associations and interrelationships of all or some elements within a specific geographic region.",
+    "amharic": "በአንድ የተወሰነ ክልል ውስጥ የሚገኙትን በርካታ ተፈጥሯዊና ሰው ሰራሽ ክስተቶች እርስ በእርስ ያላቸውን ቁርኝት ማጥናት Regional Geography ይባላል።"
+  },
+  {
+    "n": 5,
+    "stem": "A geographer describes an ancient historical town by detailing its local toponym, its rugged mountainous terrain, and its environmental situation relative to surrounding river valleys. Which geographic theme is primarily being addressed?",
+    "options": [
+      "Absolute Location",
+      "Place",
+      "Movement",
+      "Region"
+    ],
+    "answer": 1,
+    "explanation": "The theme of \"Place\" refers to the physical and human aspects of a location, specifically associated with toponym (name), site (features), and situation (environmental conditions).",
+    "amharic": "\"Place\" (ቦታ) የሚለው የጂኦግራፊ ጭብጥ የአንድን አካባቢ ስም (toponym)፣ የመልክአ ምድር ገጽታዎችን (site) እና የአካባቢውን ሁኔታዎች (situation) ጨምሮ አካባቢያዊ ገጽታዎችን ያጠናል።"
+  },
+  {
+    "n": 6,
+    "stem": "Farmers residing in steep mountainous terrain construct stone terraces and plant biological vegetative strips to control soil erosion caused by heavy rains. This practice exemplifies which aspect of human-environment interaction?",
+    "options": [
+      "Dependency",
+      "Adaptation",
+      "Modification",
+      "Isolation"
+    ],
+    "answer": 2,
+    "explanation": "Modification occurs when humans actively alter, shape, or conquer their natural environment to make it more suitable for living and farming (such as terracing steep slopes).",
+    "amharic": "Modification (ማሻሻል/መቀየር) የሚባለው የሰው ልጅ አካባቢውን ለኑሮው ምቹ ለማድረግ ወይም አደጋዎችን ለመከላከል (ለምሳሌ፦ እርከን መስራት) ሲለወጥና ሲቀርጽ ነው።"
+  },
+  {
+    "n": 7,
+    "stem": "Nomadic pastoralists living in arid lowlands adjust their seasonal migration routes, wear lightweight clothing, and build portable dome-shaped dwellings in response to extreme heat. This behavior represents:",
+    "options": [
+      "Environmental modification",
+      "Human adaptation to environmental challenges",
+      "Permanent industrial urbanization",
+      "Soil degradation control"
+    ],
+    "answer": 1,
+    "explanation": "Adaptation involves humans modifying their lifestyles, behaviors, and clothing to successfully live within a new or challenging environment.",
+    "amharic": "Adaptation (መላመድ) ሰዎች ከአዳዲስ ወይም አስቸጋሪ የአካባቢ ሁኔታዎች ጋር ለመላመድ አኗኗራቸውን እና ባህሪያቸውን ሲያስተካክሉ የሚታይ ነው።"
+  },
+  {
+    "n": 8,
+    "stem": "The global diffusion of internet technologies, the international shipment of commercial goods, and the historical migration of populations across continents correspond to which fundamental theme of geography?",
+    "options": [
+      "Region",
+      "Place",
+      "Movement",
+      "Absolute Location"
+    ],
+    "answer": 2,
+    "explanation": "Movement entails the translocation of human beings, goods, and ideas from one location to another across the surface of the earth.",
+    "amharic": "የሰዎች፣ የእቃዎች እና የሀሳቦች ከአንድ ቦታ ወደ ሌላ ቦታ መዘዋወር (Movement) የተባለውን የጂኦግራፊ ጭብጥ ይወክላል።"
+  },
+  {
+    "n": 9,
+    "stem": "A designated telecommunication network service area centered around a major metropolitan hub, defined by the functional linkages binding outlying towns to the center, represents which type of region?",
+    "options": [
+      "Formal (Uniform) Region",
+      "Functional (Nodal) Region",
+      "Astronomical Region",
+      "Topographic Region"
+    ],
+    "answer": 1,
+    "explanation": "A functional or nodal region is defined by functional interrelationships and spatial system linkages binding a central node to surrounding areas.",
+    "amharic": "የኮሙዩኒኬሽን ወይም የንግድ ማዕከልንና ዙሪያውን የሚያያይዝ የአስተሳሰር ስርአት Functional ወይም Nodal Region ይባላል።"
+  },
+  {
+    "n": 10,
+    "stem": "An area characterized by uniform climatic conditions, homogeneous vegetation, or a shared dominant language spoken throughout its territory is classified as a:",
+    "options": [
+      "Functional region",
+      "Formal (homogeneous) region",
+      "Nodal transport grid",
+      "Urban industrial corridor"
+    ],
+    "answer": 1,
+    "explanation": "A formal region exhibits homogeneity in terms of specific physical or cultural phenomena, such as soil type, temperature, or language.",
+    "amharic": "በውስጡ ተመሳሳይ ባህሪያት (ለምሳሌ፦ ተመሳሳይ የአየር ንብረት፣ ቋንቋ ወይም አፈር) ያላቸው አካባቢዎች Formal (Homogeneous) Region ይባላሉ።"
+  },
+  {
+    "n": 11,
+    "stem": "A territory is geographically situated between 3°N and 15°N latitudes. What is the primary thermal implication of this astronomical coordinate range?",
+    "options": [
+      "A permanent polar tundra climate.",
+      "A tropical climate, though potentially modified by altitude.",
+      "Heavy snowfall throughout all annual seasons.",
+      "Complete uniformity with zero seasonal variation."
+    ],
+    "answer": 1,
+    "explanation": "Location between 3°N and 15°N places a territory within the tropical zone, giving it a tropical climate, which is subsequently modified by high altitude.",
+    "amharic": "ከምድር ወገብ እና ከካንሰር Tropic መካከል (3°N እና 15°N) መገኘት ሞቃታማ (tropical) የአየር ንብረት እንዲኖር ያደርጋል፤ ይሁን እንጂ በከፍተኛ ቦታዎች (altitude) ሊሻሻል ይችላል።"
+  },
+  {
+    "n": 12,
+    "stem": "A country spans longitudinally across 15° (33°E to 48°E). What is the exact local time difference between its easternmost and westernmost points?",
+    "options": [
+      "30 minutes",
+      "Exactly 1 hour",
+      "2 hours",
+      "15 minutes"
+    ],
+    "answer": 1,
+    "explanation": "A longitudinal extension of 15° translates to a 1-hour time difference (1° = 4 minutes; 15 × 4 = 60 minutes).",
+    "amharic": "የንግሥና/የኬንሰር ስፋት 15° ሲሆን፣ በምስራቅና በምዕራብ ጫፎች መካከል የ 1 ሰዓት የጊዜ ልዩነት ይፈጥራል።"
+  },
+  {
+    "n": 13,
+    "stem": "Why does a very large territorial landmass frequently create economic and administrative hurdles for a developing state?",
+    "options": [
+      "Because large landmasses completely eliminate climatic diversity.",
+      "Because vast distances and rugged terrain demand massive capital for infrastructure and complicate nationwide integration.",
+      "Because large countries cannot have water bodies.",
+      "Because large countries have zero population."
+    ],
+    "answer": 1,
+    "explanation": "Large territorial size requires massive capital investment for infrastructure development, presents challenges for nationwide socio-economic integration, and complicates effective administration.",
+    "amharic": "ትልቅ የሀገር ስፋት ከመልከአ ምድር ኬላዎች ጋር ሲደመር የመሠረተ ልማት ዝርጋታ ከፍተኛ ካፒታል እንዲጠይቅና አጠቃላይ አስተዳደራዊ ቁጥጥርን አስቸጋሪ ያደርገዋል።"
+  },
+  {
+    "n": 14,
+    "stem": "In comparative shape analysis, what does an exceptionally high Area-Boundary (A/B) ratio indicate regarding a country's geometry?",
+    "options": [
+      "An extremely elongated or fragmented shape resembling a narrow ribbon.",
+      "A higher degree of compactness, meaning more area is enclosed relative to boundary length.",
+      "That the territory is entirely landlocked without any borders.",
+      "That the boundary length is infinitely long."
+    ],
+    "answer": 1,
+    "explanation": "The Area-Boundary (A/B) ratio measures compactness; the higher the A/B ratio, the greater the degree of compactness because it encloses more area per unit of boundary length.",
+    "amharic": "የ A/B (የስፋት እና የድንበር ርዝመት) ምጣኔ ከፍ ባለ መጠን ሀገሪቱ የበለጠ የታመቀ (compact) ቅርፅ እንዳላት ያሳያል።"
+  },
+  {
+    "n": 15,
+    "stem": "When calculating the Boundary-Circumference (B/C) ratio of a state, what does a ratio value approaching 1 signify?",
+    "options": [
+      "The state's shape is extremely irregular and fragmented.",
+      "The state's boundary closely approximates the circumference of an equal-sized circle, indicating high compactness.",
+      "The state has an absolute circular shape with zero boundaries.",
+      "The territory is entirely covered by water."
+    ],
+    "answer": 1,
+    "explanation": "The B/C ratio measures how far a country's boundary approximates the circumference of an equal-sized circle; a ratio closer to 1 indicates a more compact, circular-like shape.",
+    "amharic": "የ B/C ምጣኔ ወደ 1 ሲጠጋ የሀገሪቱ ድንበር ከክብ ቅርፅ ጋር መመሳሰሉንና ይበልጥ የታመቀ መሆኑን ያሳያል።"
+  },
+  {
+    "n": 16,
+    "stem": "The Area-Area (A/A′) ratio compares the actual area of a country to the area of its smallest possible inscribing circle. What does a value closer to 1 indicate in this index?",
+    "options": [
+      "Maximum dispersion and fragmentation",
+      "Maximum circularity and compactness",
+      "Equal population distribution across borders",
+      "Complete lack of geographic features"
+    ],
+    "answer": 1,
+    "explanation": "The A/A' ratio evaluates how closely a country's actual area matches its inscribing circle; a ratio closer to 1 indicates greater compactness.",
+    "amharic": "የ A/A' ምጣኔ ዋጋ ወደ 1 ሲጠጋ ሀገሪቱ ያላት ቅርፅ ክብን የተከተለ እና ከፍተኛ መታመቅ (compactness) እንዳለው ያመለክታል።"
+  },
+  {
+    "n": 17,
+    "stem": "Which shape classification describes a country that possesses one narrow, elongated portion extending outward from the main body of the state (such as Myanmar or Eritrea)?",
+    "options": [
+      "Compact",
+      "Fragmented",
+      "Protruded",
+      "Perforated"
+    ],
+    "answer": 2,
+    "explanation": "Protruded states have one portion that is much more elongated or extended than the rest of the country.",
+    "amharic": "የተዘረጋ (Protruded) ሀገራት ከአንድ ዋና አካል በተጨማሪ ረዘም ያለ የተዘረጋ ክፍል ያላቸው ናቸው (ለምሳሌ፦ ኤርትራ እና ማያንማር)።"
+  },
+  {
+    "n": 18,
+    "stem": "What is a primary administrative and defense advantage of a compact country shape?",
+    "options": [
+      "It isolates the country entirely from international trade.",
+      "The distance from the geographic center to any border does not vary greatly, making defense and socio-economic integration easier.",
+      "It automatically guarantees a navigable coastline.",
+      "It prevents any form of cultural interaction."
+    ],
+    "answer": 1,
+    "explanation": "In a compact country, the distance from the center to any border is relatively short and uniform, facilitating easier defense, communication, and socio-economic integration.",
+    "amharic": "የታመቀ (Compact) ቅርፅ ያላቸው ሀገሮች ከማዕከል እስከ ድንበር ያለው ርቀት ብዙም ስለማይለያይ ለሀገር መከላከያ፣ ለኢኮኖሚና ማህበራዊ ትስስር በጣም ምቹ ናቸው።"
+  },
+  {
+    "n": 19,
+    "stem": "A cartographer is designing a map where 1 centimeter on the paper represents 50,000 centimeters on the actual ground (1:50,000). How is this scale classified?",
+    "options": [
+      "Verbal statement scale",
+      "Representative Fraction (RF) scale",
+      "Contour interval scale",
+      "Isoline meteorological scale"
+    ],
+    "answer": 1,
+    "explanation": "A scale expressed as a ratio or fraction (e.g., 1:50,000) is known as a Representative Fraction (RF) scale.",
+    "amharic": "እንደ 1:50,000 ያሉ በመጠን ወይም በክፍልፋይ የሚገለጹ መለኪያዎች Representative Fraction (RF) scale በመባል ይታወቃሉ።"
+  },
+  {
+    "n": 20,
+    "stem": "Why is the date of compilation considered critical marginal information when analyzing a topographical map for infrastructure planning?",
+    "options": [
+      "It dictates the exact daily temperature of the mapped area.",
+      "It enables map users to determine whether the geographic data is current or outdated due to landscape changes.",
+      "It serves as the mathematical formula for calculating longitude.",
+      "It is only required for decorative border framing."
+    ],
+    "answer": 1,
+    "explanation": "The date of compilation tells the user when the map was published, helping them evaluate the reliability and currency of the geographical information depicted.",
+    "amharic": "የካርታው የተዘጋጀበት ቀን (Date of compilation) ካርታው ወቅታዊ መሆን አለመሆኑን፣ እንዲሁም የተመሰለበት መረጃ የቆየ ወይም አዲስ መሆኑን ለማወቅ ይረዳል።"
+  },
+  {
+    "n": 21,
+    "stem": "When training students in basic map reading, why is establishing orientation using the north arrow emphasized as a fundamental first step?",
+    "options": [
+      "Because it automatically calculates the Gross Domestic Product of the region.",
+      "Because it allows map readers to correctly orient themselves and determine the relative directions of features.",
+      "Because north arrows prevent soil erosion on steep slopes.",
+      "Because it converts topographic maps into satellite imagery."
+    ],
+    "answer": 1,
+    "explanation": "The north arrow is essential for orienting the map correctly so that users can determine cardinal directions (east, west, north, south) and locate features relative to one another.",
+    "amharic": "የሰሜን ምልክት (North arrow) ካርታውን በትክክል ለማስተካከል (orient) እና በካርታው ላይ ያሉትን ቦታዎች ትክክለኛ አቅጣጫ ለመለየት ይረዳል።"
+  },
+  {
+    "n": 22,
+    "stem": "A map is published illustrating the spatial distribution and variation of annual average temperature across different regional states. What specific type of map is this?",
+    "options": [
+      "A topographic map depicting contour lines exclusively.",
+      "A special purpose (statistical) map showing the distribution of a specific phenomenon.",
+      "An aeronautical navigation chart.",
+      "A cadastral land parcel registry map."
+    ],
+    "answer": 1,
+    "explanation": "Special purpose or statistical maps illustrate the distribution and patterns of specific geographical phenomena such as temperature, rainfall, population, or vegetation.",
+    "amharic": "የአየር ንብረት ስርጭትን፣ የሙቀት መጠንን ወይም ህዝብ ስርጭትን የሚያሳዩ ካርታዎች Special purpose / statistical maps (ስታቲስቲካዊ/ልዩ ዓላማ ካርታዎች) ይባላሉ።"
+  },
+  {
+    "n": 23,
+    "stem": "What is the definition of a map in the context of geographical studies?",
+    "options": [
+      "A three-dimensional physical globe made of plastic.",
+      "A two-dimensional scaled representation of part or the whole of the Earth's surface on a flat body.",
+      "A statistical spreadsheet of demographic data.",
+      "An aerial satellite photograph without any scale."
+    ],
+    "answer": 1,
+    "explanation": "A map is a two-dimensional scaled representation of part or the whole of the Earth's surface on a flat medium such as paper, cloth, or wood.",
+    "amharic": "ካርታ ማለት የምድርን አካል ወይም ሙሉ ገጽ በሁለት ממድ (two-dimensional) በጠፍጣፋ ነገር (ለምሳሌ በወረቀት፣ በእጨት ወይም በጨርቅ) ላይ ልኬትን ጠብቆ ማሳየት ማለት ነው።"
+  },
+  {
+    "n": 24,
+    "stem": "In topographic map reading, which category includes features such as roads, railways, buildings, and dams?",
+    "options": [
+      "Natural features",
+      "Manmade (cultural) features",
+      "Lithospheric tectonic plates",
+      "Atmospheric pressure cells"
+    ],
+    "answer": 1,
+    "explanation": "Cultural or manmade features on maps include infrastructure built by humans, such as roads, railways, buildings, and dams.",
+    "amharic": "ሰው ሰራሽ (Manmade/cultural) ባህሪያት የሚባሉት በሰው ልጅ የተገነቡ እንደ መንገዶች፣ የባቡር ሀዲዶች፣ ህንፃዎች እና ግድቦች ያሉ ናቸው።"
+  },
+  {
+    "n": 25,
+    "stem": "What is the primary cartographic purpose of the map key (legend)?",
+    "options": [
+      "To show the exact date of map publication.",
+      "To list and interpret all conventional symbols, colors, and signs used on the map.",
+      "To calculate longitudinal time differences.",
+      "To frame the outer boundaries of the sheet."
+    ],
+    "answer": 1,
+    "explanation": "The key or legend provides a list and explanation of all conventional symbols and signs shown on the map.",
+    "amharic": "የካርታ ቁልፍ (Key/Legend) በካርታው ላይ ጥቅም ላይ የዋሉትን ምልክቶችና መለያዎች ትርጉም የሚያብራራ ዝርዝር ነው።"
+  },
+  {
+    "n": 26,
+    "stem": "A study focuses exclusively on the volumetric water discharge and catchment area of the Blue Nile River without examining surrounding human settlements. This research represents:",
+    "options": [
+      "Regional Geography",
+      "Systematic (Topical) Geography",
+      "Cultural Anthropology",
+      "Geopolitical Strategy"
+    ],
+    "answer": 1,
+    "explanation": "Focusing strictly on one specific physical element (such as river discharge) across space is the hallmark of topical or systematic geography.",
+    "amharic": "የአንድን ወንዝ የውሃ መጠን ወይም ፍሰት ብቻ ነጥሎ ማጥናት የ Topical (Systematic) Geography ጥናት አካሄድ ነው።"
+  },
+  {
+    "n": 27,
+    "stem": "When a researcher examines how climate, vegetation, soils, and human economic activities interact within the Horn of Africa as an integrated unit, which geographic approach is being utilized?",
+    "options": [
+      "Topical Approach",
+      "Regional Approach",
+      "Absolute Astronomical Positioning",
+      "Systematic Grid Mapping"
+    ],
+    "answer": 1,
+    "explanation": "Regional geography examines the associations and interrelationships of various elements within a specific region.",
+    "amharic": "በአንድ የተወሰነ ክልል (ለምሳሌ፦ የአፍሪካ ቀንድ) ውስጥ ያሉትን በርካታ ተፈጥሯዊና ሰው ሰራሽ ክስተቶች እርስ በእርስ ያላቸውን ቁርኝት ማጥናት Regional Approach ይባላል።"
+  },
+  {
+    "n": 28,
+    "stem": "Which term describes the physical description of the internal features of a place (such as landforms, soil, and local water sources), as opposed to its external relational setting?",
+    "options": [
+      "Situation",
+      "Site",
+      "Toponym",
+      "Meridian"
+    ],
+    "answer": 1,
+    "explanation": "\"Site\" refers to the internal physical and cultural characteristics of a location, whereas \"situation\" refers to its external relative location.",
+    "amharic": "\"Site\" የአንድን ቦታ შዳዊ መልክአ ምድራዊ ባህሪያት (መሬት፣ አፈር፣ ውሃ) ሲገልጽ፣ \"Situation\" ደግሞ ያ ቦታ ከሌሎች አካባቢዎች አንፃር ያለውን ውጫዊ ግንኙነት ያሳያል።"
+  },
+  {
+    "n": 29,
+    "stem": "What term refers to the proper name given to a specific geographic place on the Earth's surface?",
+    "options": [
+      "Site",
+      "Situation",
+      "Toponym",
+      "Isobar"
+    ],
+    "answer": 2,
+    "explanation": "Toponym is defined as the specific name of a place on Earth.",
+    "amharic": "Toponym ማለት የአንድ ቦታ መጠሪያ ስም ማለት ነው።"
+  },
+  {
+    "n": 30,
+    "stem": "Which geographic theme explains why human beings have been able to inhabit virtually all continents and islands through physical translocation and travel?",
+    "options": [
+      "Region",
+      "Place",
+      "Movement",
+      "Human-Environment Interaction"
+    ],
+    "answer": 2,
+    "explanation": "The theme of \"Movement\" entails the physical translocation of human beings, goods, and ideas across the planet.",
+    "amharic": "\"Movement\" (እንቅስቃሴ) የሚለው ጭብጥ የሰዎች፣ የእቃዎች እና የሀሳቦች ከቦታ ቦታ መዘዋወርን ያካትታል።"
+  },
+  {
+    "n": 31,
+    "stem": "Which of the following countries constitute the member states of the Horn of Africa region?",
+    "options": [
+      "Kenya, Tanzania, Uganda, Rwanda",
+      "Djibouti, Eritrea, Ethiopia, Somalia",
+      "Sudan, South Sudan, Egypt, Libya",
+      "Nigeria, Ghana, Cameroon, Togo"
+    ],
+    "answer": 1,
+    "explanation": "The Horn of Africa comprises Djibouti, Eritrea, Ethiopia, and Somalia—countries whose cultures and histories have been closely linked.",
+    "amharic": "የአፍሪካ ቀንድ (Horn of Africa) አገራት በመባል የሚታወቁት ጅቡቲ፣ ኤርትራ፣ ኢትዮጵያ እና ሶማሊያ ናቸው።"
+  },
+  {
+    "n": 32,
+    "stem": "What are the extreme latitudinal coordinates that mark the southern and northern boundaries of Ethiopia's absolute location?",
+    "options": [
+      "0° to 10°N",
+      "3°N (Moyale) to 15°N (Bademe)",
+      "10°N to 25°N",
+      "5°S to 15°S"
+    ],
+    "answer": 1,
+    "explanation": "Astronomically, Ethiopia lies between 3°N (Moyale) in the south and 15°N (Bademe) in the north.",
+    "amharic": "በ astronomical መገኛ መሰረት ኢትዮጵያ ከ 3°N (ሞያሌ) እስከ 15°N (ባደሜ) ትገኛለች።"
+  },
+  {
+    "n": 33,
+    "stem": "Which longitudinal coordinates define the western and eastern absolute boundaries of Ethiopia?",
+    "options": [
+      "20°E to 35°E",
+      "33°E (Akobo) to 48°E (Tip of Ogaden)",
+      "40°E to 60°E",
+      "15°E to 30°E"
+    ],
+    "answer": 1,
+    "explanation": "Ethiopia's longitudinal span stretches from 33°E at Akobo in the west to 48°E at the tip of Ogaden in the east.",
+    "amharic": "የኢትዮጵያ የኬንሰር (longitude) ወሰን ከ 33°E (አኮቦ) እስከ 48°E (የኦጋዴን ጫፍ) ድረስ ነው።"
+  },
+  {
+    "n": 34,
+    "stem": "Although a country's longitudinal span creates a local solar time difference across its borders, what standard operational practice is typically adopted across an entire nation like Ethiopia for administrative convenience?",
+    "options": [
+      "Changing clocks hourly at every town boundary.",
+      "Utilizing a uniform standardized time zone (such as East Africa Time, UTC+3) nationwide.",
+      "Operating on four distinct time zones simultaneously.",
+      "Restricting timekeeping strictly to local solar noon."
+    ],
+    "answer": 1,
+    "explanation": "For administrative and operational convenience, a uniform 3-hour time zone is used across all parts of Ethiopia despite the longitudinal time span.",
+    "amharic": "በምስራቅና ምዕራብ መካከል የሰዓት ልዩነት ቢኖርም፣ ለአስተዳደራዊ ምቾት ሲባል በሁሉም የሀገሪቱ ክፍሎች አንድ ወጥ የሆነ የ 3 ሰዓት (UTC+3) አሰራር ጥቅም ላይ ይውላል።"
+  },
+  {
+    "n": 35,
+    "stem": "What is the primary reason why high territorial size can sometimes be considered a disadvantage regarding national security and defense?",
+    "options": [
+      "It eliminates all natural borders.",
+      "It requires a large military force and greater financial resources to effectively protect and patrol extensive borders.",
+      "It prevents any form of international trade.",
+      "It causes permanent climatic drought."
+    ],
+    "answer": 1,
+    "explanation": "A very large country size demands a large military force and greater capital expenditure to defend and secure extensive territorial boundaries.",
+    "amharic": "ትልቅ የሀገር ስፋት ግዙፍ ድንበሮችን ለመጠበቅና ለመከላከል ትልቅ ሰራዊት እና ከፍተኛ የገንዘብ ወጪ እንዲጠይቅ ያደርጋል።"
+  },
+  {
+    "n": 36,
+    "stem": "Which index of compactness compares the actual area of a country to the area of its smallest possible inscribing circle?",
+    "options": [
+      "Area-Boundary ratio",
+      "Boundary-Circumference ratio",
+      "Area-Area (A/A') ratio",
+      "Area-Circumference ratio"
+    ],
+    "answer": 2,
+    "explanation": "The Area-Area (A/A') ratio uses the area of the smallest possible inscribing circle whose circumference passes through the extreme boundary points.",
+    "amharic": "የ Area-Area (A/A') ምጣኔ የሀገሪቱን ትክክለኛ ስፋት በጽንፈኛ የድንበር ነጥቦች ከሚያልፈው ትንሹ ክበብ ስፋት ጋር ያነፃፅራል።"
+  },
+  {
+    "n": 37,
+    "stem": "Why are maps described by geographers as indispensable primary tools rather than just simple drawings?",
+    "options": [
+      "Because they replace the need for field observation entirely.",
+      "Because they allow geographers to display and analyze spatial distributions, patterns, and relationships that cannot easily be observed in real landscapes.",
+      "Because they can predict future weather events with 100% accuracy.",
+      "Because they are exclusively used for military combat."
+    ],
+    "answer": 1,
+    "explanation": "Maps are essential tools because they help display and analyze spatial patterns and relationships that are difficult to perceive directly on real landscapes.",
+    "amharic": "በገሃዱ ዓለም በቀላሉ ሊታዩ የማይችሉ የቦታ ስርጭቶችንና ግንኙነቶችን በግልጽ ለማሳየትና ለመተንተን ካርታዎች እጅግ ጠቃሚ መሣሪያዎች ናቸው።"
+  },
+  {
+    "n": 38,
+    "stem": "What is the primary function of an economic or special-purpose map in geographic analysis?",
+    "options": [
+      "To show political boundaries and capital cities exclusively.",
+      "To show the distribution of specific aspects such as temperature, rainfall, population, or vegetation.",
+      "To measure the precise depth of ocean trenches.",
+      "To replace topographic contour lines."
+    ],
+    "answer": 1,
+    "explanation": "Special-purpose or statistical maps show the distribution of different specific aspects such as temperature, rainfall, settlement, or vegetation.",
+    "amharic": "ስታቲስቲካዊ ወይም ልዩ ዓላማ ካርታዎች እንደ ሙቀት፣ ዝናብ፣ ህዝብ ስርጭት እና እፅዋት ያሉ የተወሰኑ መረጃዎችን ስርጭት ያሳያሉ።"
+  },
+  {
+    "n": 39,
+    "stem": "According to geographic literacy principles, why is the study of geography and spatial relationships considered vital for citizens and students?",
+    "options": [
+      "To memorize coordinates without understanding real-world contexts.",
+      "To provide a sense of place and time, enabling individuals to comprehend spatial problems and contribute meaningfully to development policies.",
+      "To eliminate the need for economic or social planning.",
+      "To restrict scientific research."
+    ],
+    "answer": 1,
+    "explanation": "Geographic literacy provides students with a sense of place and time, which is pivotal in producing competent citizens able to comprehend and analyze spatial problems and policy solutions.",
+    "amharic": "የጂኦግራፊያዊ ንቃተ-ህዳሴ ተማሪዎች የቦታና የጊዜ ግንዛቤ እንዲኖራቸው በማድረግ የቦታ ችግሮችን እንዲረዱ እና ለልማት ፖሊሲዎች መፍትሄ እንዲያበረክቱ ያስችላል።"
+  },
+  {
+    "n": 40,
+    "stem": "What type of interaction is demonstrated when humans depend on nature for their basic livelihood without significantly altering the ecosystem structure?",
+    "options": [
+      "Modification",
+      "Dependency",
+      "Industrialization",
+      "Urbanization"
+    ],
+    "answer": 1,
+    "explanation": "Dependency refers to the ways in which humans depend directly on nature and natural resources for their basic living.",
+    "amharic": "Dependency (ጥገኛ መሆን) ማለት የሰው ልጅ ለኑሮው በቀጥታ በተፈጥሮ ላይ ጥገኛ የሚሆንባቸውን መንገዶች ያካትታል።"
+  }
+ ];
+const LETTERS = ["A","B","C","D"];
+const DURATION = 40 * 60;
+let answers = Array(QUESTIONS.length).fill(null);
+let current = 0, started = false, finished = false, secondsLeft = DURATION, ticker = null, showWrongOnly = false, studentName = "";
+const $ = id => document.getElementById(id);
+function startExam(){
+  if(started)return;
+  const nameField = $("studentName"), codeField = $("accessCode"), error = $("entryError");
+  studentName = nameField.value.trim();
+  const accessCode = codeField.value.trim();
+  error.textContent = "";
+  if (!studentName || !accessCode) {
+    error.textContent = "Please enter your full name and exam access code to continue.";
+    (!studentName ? nameField : codeField).focus();
+    return;
+  }
+  started=true;
+  $("startScreen").classList.add("hide"); $("examScreen").classList.remove("hide");
+  try { if(document.documentElement.requestFullscreen) document.documentElement.requestFullscreen().catch(()=>{}); } catch(e){}
+  renderQuestion(); renderNav(); updateTimer();
+  ticker=setInterval(()=>{secondsLeft--;updateTimer();if(secondsLeft<=0){clearInterval(ticker);finishExam(true)}},1000);
+}
+function updateTimer(){
+  const mm=String(Math.floor(Math.max(0,secondsLeft)/60)).padStart(2,"0"), ss=String(Math.max(0,secondsLeft)%60).padStart(2,"0");
+  $("timer").textContent=mm+":"+ss; $("timer").classList.toggle("warn",secondsLeft<=300);
+}
+function renderQuestion(){
+  const q=QUESTIONS[current]; $("qnumber").textContent=`Question ${current+1} of ${QUESTIONS.length}`;
+  $("questionText").textContent=q.stem; $("options").innerHTML="";
+  q.options.forEach((opt,idx)=>{
+    const b=document.createElement("button"); b.className="option"+(answers[current]===idx?" selected":""); b.type="button";
+    const letter=document.createElement("span");letter.className="letter";letter.textContent=LETTERS[idx];
+    const text=document.createElement("span");text.textContent=opt;b.append(letter,text);
+    b.setAttribute("aria-pressed",answers[current]===idx?"true":"false");
+    b.addEventListener("click",()=>{if(finished)return;answers[current]=idx;renderQuestion();renderNav()});
+    $("options").appendChild(b);
+  });
+  $("prevBtn").disabled=current===0; $("prevBtn").style.opacity=current===0?".45":"1";
+  $("nextBtn").textContent=current===QUESTIONS.length-1?"Last Question":"Next →";
+  $("progressBar").style.width=((answers.filter(a=>a!==null).length/QUESTIONS.length)*100)+"%";
+}
+function renderNav(){
+  $("navGrid").innerHTML="";
+  QUESTIONS.forEach((q,i)=>{const b=document.createElement("button");b.className="qdot"+(i===current?" current":"")+(answers[i]!==null?" answered":"");b.textContent=i+1;b.title=`Question ${i+1}${answers[i]!==null?" — answered":" — unanswered"}`;b.addEventListener("click",()=>{current=i;renderQuestion();renderNav()});$("navGrid").appendChild(b)});
+  $("answeredCount").textContent=answers.filter(a=>a!==null).length;
+}
+function move(delta){current=Math.max(0,Math.min(QUESTIONS.length-1,current+delta));renderQuestion();renderNav()}
+function submitExam(){
+  const unanswered=answers.filter(a=>a===null).length;
+  if(unanswered>0&&!confirm(`You have ${unanswered} unanswered question(s). Submit anyway?`))return;
+  if(confirm("Submit your exam now? You cannot change answers after submission."))finishExam(false);
+}
+function finishExam(auto){
+  if(finished)return;finished=true;if(ticker)clearInterval(ticker);
+  $("examScreen").classList.add("hide");$("focusShield").classList.add("hide");$("resultScreen").classList.remove("hide");
+  try{if(document.fullscreenElement)document.exitFullscreen().catch(()=>{})}catch(e){}
+  const score=QUESTIONS.reduce((sum,q,i)=>sum+(answers[i]===q.answer?1:0),0);
+  const pct=Math.round(score/QUESTIONS.length*100);
+  $("scoreValue").textContent=`${score}/${QUESTIONS.length}`;$("percentValue").textContent=pct+"%";
+  $("resultSummary").textContent=`Student: ${studentName} · ${score} correct · ${QUESTIONS.length-score} incorrect · ${answers.filter(a=>a===null).length} unanswered${auto?" · Time expired":""}`;
+  buildReview(true);window.scrollTo({top:0,behavior:"smooth"});
+}
+function buildReview(wrongOnly){
+  showWrongOnly=wrongOnly;$("reviewList").innerHTML="";
+  QUESTIONS.forEach((q,i)=>{
+    const correct=answers[i]===q.answer;
+    if(wrongOnly&&correct)return;
+    const details=document.createElement("details");details.className="review";if(!correct)details.open=true;
+    const summary=document.createElement("summary");summary.textContent=`Question ${i+1} · ${correct?"Correct":"Incorrect / unanswered"}`;summary.style.color=correct?"var(--good)":"var(--bad)";
+    const body=document.createElement("div");body.className="reviewbody";
+    const stem=document.createElement("p");stem.style.fontWeight="750";stem.textContent=q.stem;body.appendChild(stem);
+    q.options.forEach((opt,j)=>{const div=document.createElement("div");div.className="result-option"+(j===q.answer?" is-correct":"")+(answers[i]===j&&j!==q.answer?" is-picked-wrong":"");div.textContent=LETTERS[j]+". "+opt+(j===q.answer?"  ✓ Correct answer":"")+(answers[i]===j&&j!==q.answer?"  · Your answer":"");body.appendChild(div)});
+    const expl=document.createElement("p");expl.className="explain-english";const explLabel=document.createElement("strong");explLabel.textContent="Explanation (English): ";expl.appendChild(explLabel);expl.appendChild(document.createTextNode(q.explanation||"Explanation not available."));body.appendChild(expl);
+    const am=document.createElement("p");am.className="explain-amharic";am.setAttribute("lang","am");am.setAttribute("dir","auto");const amLabel=document.createElement("strong");amLabel.textContent="ማብራሪያ (በአማርኛ): ";am.appendChild(amLabel);am.appendChild(document.createTextNode(q.amharic||"የአማርኛ ማብራሪያ አልተገኘም።"));body.appendChild(am);
+    details.append(summary,body);$("reviewList").appendChild(details);
+  });
+  if(!$("reviewList").children.length){$("reviewList").textContent="No incorrect answers. Excellent work!"}
+}
+$("startBtn").addEventListener("click",startExam);
+$("prevBtn").addEventListener("click",()=>move(-1));$("nextBtn").addEventListener("click",()=>move(1));
+$("submitBtn").addEventListener("click",submitExam);
+$("reviewWrongBtn").addEventListener("click",()=>buildReview(true));$("reviewAllBtn").addEventListener("click",()=>buildReview(false));
+$("backTopBtn").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
+$("returnBtn").addEventListener("click",()=>{$("focusShield").classList.add("hide");try{if(document.documentElement.requestFullscreen)document.documentElement.requestFullscreen().catch(()=>{})}catch(e){}});
+document.addEventListener("contextmenu",e=>{if(started&&!finished)e.preventDefault()});
+document.addEventListener("copy",e=>{if(started&&!finished)e.preventDefault()});
+document.addEventListener("selectstart",e=>{if(started&&!finished)e.preventDefault()});
+document.addEventListener("keydown",e=>{
+  if(started&&!finished&&(e.key==="PrintScreen"||(e.ctrlKey&&["p","s","u"].includes(e.key.toLowerCase())))){e.preventDefault()}
+  if(started&&!finished&&e.key==="Escape"&&document.fullscreenElement){e.preventDefault()}
+});
+document.addEventListener("visibilitychange",()=>{if(started&&!finished&&document.hidden)$("focusShield").classList.remove("hide")});
+window.addEventListener("blur",()=>{if(started&&!finished)$("focusShield").classList.remove("hide")});
+</script>
+</body></html>
